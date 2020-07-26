@@ -77,8 +77,10 @@
 }
 .phone-user-bar .menu-icon div {
   width: 2px;
+  max-height: 2px;
+  max-width: 2px;
   height: 2px;
-  border-radius: 50%;
+  border-radius: 9999999px;
   background-color: var(--white);
 }
 .phone-user-bar .menu-icon div:not(:last-child) {
