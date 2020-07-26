@@ -69,7 +69,7 @@
 .phone-chat p.msg-received {
   background-color: #ede5f4;
   color: hsl(293, 100%, 63%);
-  font-weight: 700;
+  font-weight: 500;
   border-bottom-left-radius: 5px;
 }
 .phone-chat p.msg-received:hover {
