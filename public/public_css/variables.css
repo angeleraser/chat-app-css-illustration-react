@@ -1,0 +1,24 @@
+:root {
+  /* Font Colors  */
+  --pale-violet: hsl(276, 100%, 81%);
+  --moderated-violet: hsl(276, 55%, 52%);
+  --desaturated-dark-violet: hsl(271, 15%, 43%);
+  --gray-blue: hsl(206, 6%, 79%);
+  --desaturated-dark-violet-2: hsl(271, 36%, 24%);
+  --dark-gray-violet: hsl(270, 7%, 64%);
+
+  --white: hsl(0, 0%, 100%);
+  --light-gray-violet: hsl(270, 20%, 96%);
+  --light-magneta: hsl(289, 100%, 72%);
+
+  --linear-gradient-1: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  --linear-gradient-2: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+}

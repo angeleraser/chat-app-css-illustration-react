@@ -1,0 +1,40 @@
+.phone-input {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  max-width: 212px;
+  position: relative;
+  margin: 15px 0 10px;
+}
+.phone-input input[type="text"] {
+  width: 100%;
+  font-size: 10px;
+  resize: none;
+  height: 32px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: var(--desaturated-dark-violet);
+  padding: 2px 30px 2px 15px;
+}
+.phone-input input::placeholder {
+  font-size: 9px;
+  color: var(--gray-blue);
+}
+.phone-input button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  position: absolute;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99999px;
+  outline: none;
+  border: none;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--desaturated-dark-violet-2);
+}

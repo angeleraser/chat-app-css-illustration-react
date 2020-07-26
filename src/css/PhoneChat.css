@@ -1,0 +1,138 @@
+.phone-chat {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  width: 212px;
+  min-height: 360px;
+  row-gap: 8px;
+  padding-top: 13px;
+  overflow-y: auto;
+}
+.phone-chat .bg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  z-index: 30;
+}
+.phone-chat .bg.hidden {
+  display: none;
+}
+.phone-chat::-webkit-scrollbar {
+  width: 0px;
+}
+.phone-chat .message-wrapper {
+  position: relative;
+  width: 130px;
+}
+.phone-chat .message-wrapper.right {
+  justify-self: flex-end;
+}
+.phone-chat .message-wrapper ul {
+  display: none;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  align-items: flex-start;
+  font-size: 8px;
+  background-color: var(--white);
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  z-index: 40;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+.phone-chat .message-wrapper ul.menu-op-active {
+  display: flex;
+}
+.phone-chat .message-wrapper ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.phone-chat p {
+  font-size: 8px;
+  padding: 6px 8px;
+  line-height: 1.4;
+  border-radius: 12px;
+  max-width: 130px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.phone-chat p.msg-received {
+  background-color: #ede5f4;
+  color: hsl(293, 100%, 63%);
+  font-weight: 700;
+  border-bottom-left-radius: 5px;
+}
+.phone-chat p.msg-received:hover {
+  transform: translateX(2px);
+}
+
+.phone-chat p.msg-send {
+  background-color: var(--white);
+  color: var(--desaturated-dark-violet);
+  border-bottom-right-radius: 5px;
+  justify-self: flex-end;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+.phone-chat p.msg-send:hover {
+  transform: translateX(-2px);
+}
+.phone-chat .pictures {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  margin-top: 12px;
+}
+
+.phone-chat .pictures img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.phone-chat .pictures img:hover {
+  transform: translateX(-1px);
+}
+.phone-chat .pictures img:not(:last-child) {
+  margin-right: 8px;
+}
+
+.phone-chat .pricing {
+  display: flex;
+  background-image: var(--linear-gradient-2);
+  align-items: center;
+  justify-content: space-between;
+  width: 162px;
+  color: var(--light-gray-violet);
+  border-radius: 12px;
+  border-bottom-left-radius: 5px;
+  padding: 4px 17px 4px 8px;
+  transition: all 0.3s;
+}
+.phone-chat .pricing:hover {
+  transform: translateX(2px);
+}
+.phone-chat .pricing p::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--gray-blue);
+  position: relative;
+  margin-right: 8px;
+}
+.phone-chat .price {
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+}
